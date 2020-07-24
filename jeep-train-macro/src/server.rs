@@ -66,9 +66,7 @@ pub fn main(input: TokenStream) -> TokenStream {
             Group::new(Delimiter::Brace, TokenStream::from_iter(content))
         )
     ]);
-
-    println!("{}", stream.to_string());
-
+    
     stream
 }
 

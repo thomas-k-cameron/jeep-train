@@ -60,7 +60,7 @@ pub fn main(input: TokenStream) -> TokenStream {
         };
     });
 
-    let token_tree= {
+    let token_tree = {
         let mut temp = TokenStream::new();
         let mut index = 1;
         let not_halt = [1, func_names.len()-1];
