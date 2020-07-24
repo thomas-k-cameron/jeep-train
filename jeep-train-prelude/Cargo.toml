@@ -1,0 +1,12 @@
+[package]
+name = "jeep-train-prelude"
+version = "0.1.0"
+authors = ["Kotone Shiinoha<kotone.shiinoha@protonmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tiny_http = "0"
+serde_urlencoded = "0.6.1"
+serde_json = "1"

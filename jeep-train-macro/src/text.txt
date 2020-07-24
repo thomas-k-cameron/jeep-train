@@ -1,0 +1,43 @@
+///
+/// #### Primary
+///
+/// ```rust
+/// scope "/primary" {
+///     primary some_path_for_primary_methods;
+/// }
+/// ```
+///
+/// `primary` is used to define all primary methods.
+/// In the above exmaple, it will expand into,
+///
+/// | method | path | function |
+/// | --- | --- | --- |
+/// | get | /primary | some_path_for_primary_methods::get |
+/// | post | /primary | some_path_for_primary_methods::post |
+/// | put | /primary | some_path_for_primary_methods::put |
+/// | patch | /primary | some_path_for_primary_methods::patch |
+/// | delete | /primary | some_path_for_primary_methods::delete |
+///
+/// The path given to primary keyword must be a namespace, whether that's a struct, enum or module, it valid as long as the underlying function is accessbile with `::method_name`.
+///
+///
+/// #### Methods
+/// `methods` is used to define all http methods.
+///
+/// ```rust
+/// scope "/methods" {
+///     methods some_path_for_methods;
+/// }
+/// ```
+/// | method | path | function |
+/// | --- | --- | --- |
+/// | get | /methods | some_path_for_methods::get |
+/// | post | /methods | some_path_for_methods::post |
+/// | put | /methods | some_path_for_methods::put |
+/// | patch | /methods | some_path_for_methods::patch |
+/// | delete | /methods | some_path_for_methods::delete |
+/// | head | /methods | some_path_for_methods::head |
+/// | connect | /methods | some_path_for_methods::connect |
+/// | options | /methods | some_path_for_methods::options |
+/// | trace | /methods | some_path_for_methods::trace |
+///

@@ -1,0 +1,17 @@
+[package]
+name = "jeep-train-macro"
+version = "0.1.0"
+authors = ["Kotone Shiinoha<kotone.shiinoha@protonmail.com>"]
+edition = "2018"
+workspace = ".."
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1"
+env_logger = "0.7"
+regex = "1"
+
+jeep-train-prelude = { path = "../jeep-train-prelude" }

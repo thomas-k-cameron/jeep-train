@@ -1,0 +1,27 @@
+[package]
+name = "jeep-train"
+version = "0.1.0"
+authors = ["Kotone Shiinoha<kotone.shiinoha@protonmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[workspace]
+exclude = [
+	"benchmark/dataset",
+	"benchmark/bench_macro",
+	"benchmark/router-v1"
+]
+members = [
+	".",
+	"./jeep-train-prelude",
+	"./jeep-train-macro",
+
+	"examples/hello_world",
+	"examples/resources",
+]
+
+[dependencies]
+jeep-train-macro = { path = "./jeep-train-macro" }
+jeep-train-prelude = { path = "./jeep-train-prelude" }
+serde = "1"
