@@ -113,12 +113,11 @@ pub mod resource_module {
 
 ## Benchmark
 Jeep train doesn't use regular expression.   
-However, I think it's uncommon to register a regular expression on router on parameterized path
-to identify specific format of data.
+However, I think it's not common to create a parameterized path with complicated logic.
 ```
 running 2 tests
 test router_actix      ... bench:     836,812 ns/iter (+/- 22,033)
 test router_jeep_train ... bench:       1,491 ns/iter (+/- 51)
 ```
-Detail can be found in benchmark-result
+Code and details can be found in benchmark-result
 
