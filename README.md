@@ -9,7 +9,7 @@ The motivation behind the development is to
 - explore ways to minimize boilerplate/learning cost
 
 ## Feature
-- Define your api routes on rails like syntax. API Syntax is straight forward and inputs are converted into match statement
+- Define your api routes on router that works with rails-like syntax. API Syntax is straight forward and inputs are converted into match statement
 - `Conn` object will be passed onto every functions invoked in the process of handling client request and it will act as a primary interface for interacting with request/response data
 
 ## Routing 
