@@ -121,3 +121,6 @@ test router_jeep_train ... bench:       1,491 ns/iter (+/- 51)
 ```
 Code and details can be found in benchmark-result
 
+# About the Benchmark result
+I've noticed that this benchmark result is not reproducible in some situations and discovered that router_actix can be significantly faster, beating router_jeep_train in many cases.  
+Please don't trust the benchmark
